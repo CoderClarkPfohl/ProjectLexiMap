@@ -14,7 +14,7 @@ TEST_CHAPTERS = [6, 10, 11, 12]
 def load_chapter(chapter_num: int) -> str:
     """load a chapter from the textbook folder."""
     try:
-        with open(f'textbook/ch{chapter_num}.txt', 'r') as f:
+        with open(f'textbook/ch{chapter_num}.txt', 'r', encoding='utf-8') as f:
             return f.read()
     except Exception as e:
         print(f"error loading chapter {chapter_num}: {e}")
