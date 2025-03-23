@@ -348,7 +348,7 @@ def main():
     # initialize keybert
     debug_print("Initializing keybert model...", important=True)
     try:
-        sentence_model = SentenceTransformer('all-MiniLM-L6-v2')
+        sentence_model = SentenceTransformer('all-mpnet-base-v2')
         keybert = KeyBERT(model=sentence_model)
         debug_print("KeyBERT initialized successfully")
     except Exception as e:
